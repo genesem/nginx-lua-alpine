@@ -15,7 +15,10 @@ Whats included:
 
 
 DIGEST:  sha256:870719ee4367174eceb4b57616318907725606837f328652878ff2731bff89b3
+
 OS/ARCH: linux/amd64
+
 SIZE:    5.26 MB
+
 
 
