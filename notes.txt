@@ -1,0 +1,5 @@
+
+
+docker build -t genesem/nginx-lua-alpine .
+docker push genesem/nginx-lua-alpine 
+
