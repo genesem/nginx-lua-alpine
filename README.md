@@ -10,5 +10,12 @@ Pull it with command:
 Whats included: 
     - Alpine 3.11
     - Nginx 1.16
-    - Lua nginx module 2.0
+    - Lua nginx module 1.16
     - ps and tcpdump.
+
+
+DIGEST:  sha256:870719ee4367174eceb4b57616318907725606837f328652878ff2731bff89b3
+OS/ARCH: linux/amd64
+SIZE:    5.26 MB
+
+
