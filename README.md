@@ -5,16 +5,16 @@ Is is a source for genesem/nginx-lua-alpine docker image located at:
 https://hub.docker.com/repository/docker/genesem/nginx-lua-alpine
 
 
-|:Whats included     |:   |
-|--------------------|:--:|
-| Alpine             |3.11|
-| procps (ps command)|    | 
-| Nginx              |1.16| 
-| luajit-dev         |    | 
-| nginx-mod-http-lua |    |
-| lua-resty-core     |    | 
-| lua-resty-lrucache |    | 
-| lua-resty-redis    |    | 
+| Whats included:       | ver. |
+|:----------------------|:----:|
+| Alpine                | 3.11 |
+| Nginx                 | 1.16 | 
+| procps (ps command)   |      | 
+| luajit-dev            |      | 
+| nginx-mod-http-lua    |      |
+| lua-resty-core        |      | 
+| lua-resty-lrucache    |      | 
+| lua-resty-redis       |      | 
   
 DIGEST:  sha256:cf99cde489c6a368cda4a95dd1d7d6589825230a5f356bcfcb37110a27326355
 
