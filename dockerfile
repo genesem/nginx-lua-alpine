@@ -6,7 +6,6 @@ FROM alpine:3.11
 LABEL maintainer "Gene Semerenko - https://github.com/genesem"
 COPY about /usr/local/bin/ 
 
-
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories; \
     apk update && apk add -u nginx procps luajit-dev \
 	nginx-mod-http-lua lua-resty-lrucache lua-resty-redis lua-resty-core; \
@@ -16,6 +15,9 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposit
 COPY nginx.conf /etc/nginx/
 COPY conf.d /etc/nginx/conf.d
 COPY www    /var/www
+
+#RUN usermod -u 1000 www-data
+#RUN chown nginx: /var/www && chmod +x /usr/local/bin/about;
 
 STOPSIGNAL SIGTERM
 EXPOSE 80 

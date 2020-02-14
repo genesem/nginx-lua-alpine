@@ -8,17 +8,22 @@ Pull it with command:
 `docker pull genesem/nginx-lua-alpine:latest`
 
 Whats included: 
-    - Alpine 3.11
+    - Alpine 3.11 with procps (ps command)
     - Nginx 1.16
-    - Lua nginx module 1.16
-    - ps and tcpdump.
+    - luajit-dev
+    - nginx-mod-http-lua
+    - lua-resty-core
+    - lua-resty-lrucache 
+    - lua-resty-redis
 
 
-DIGEST:  sha256:870719ee4367174eceb4b57616318907725606837f328652878ff2731bff89b3
+DIGEST:  sha256:cf99cde489c6a368cda4a95dd1d7d6589825230a5f356bcfcb37110a27326355
 
 OS/ARCH: linux/amd64
 
-SIZE:    5.26 MB
+SIZE:    5.97 MB
+
+Pull it: `docker pull genesem/nginx-lua-alpine:latest`
 
 
 
