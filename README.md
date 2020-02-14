@@ -1,4 +1,6 @@
-# nginx-lua-alpine
+
+# Nginx + Lua @ Alpine Linux
+
 Docker container with nginx + lua mod running over Alpine 3.11 (very compact distro).
 
 Is is a source for genesem/nginx-lua-alpine docker image located at:
