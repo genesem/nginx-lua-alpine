@@ -6,18 +6,17 @@ FROM alpine:3.11
 LABEL maintainer "Gene Semerenko - https://github.com/genesem"
 COPY about /usr/local/bin/ 
 
-RUN apk add --no-cache nginx nginx-mod-http-lua procps tcpdump;\
-    rm -rf /etc/nginx/conf.d; rm /etc/nginx/nginx.conf; \
-    mkdir -p /var/www/logs /var/www/default/html /var/lib/nginx/temp /usr/local/lib/lua;
+
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories; \
+    apk update && apk add -u nginx procps luajit-dev \
+	nginx-mod-http-lua lua-resty-lrucache lua-resty-redis lua-resty-core; \
+    rm -rf /etc/nginx/conf.d /etc/nginx/nginx.conf /var/cache/apk/*; \
+    mkdir -p /var/www/logs /var/www/default/html /var/lib/nginx/temp;
 
 COPY nginx.conf /etc/nginx/
-COPY lua    /usr/local/lib/lua
 COPY conf.d /etc/nginx/conf.d
 COPY www    /var/www
 
-RUN chown nginx:nginx /var/www && chmod +x /usr/local/bin/about;
-
 STOPSIGNAL SIGTERM
 EXPOSE 80 
-# ENTRYPOINT ["nginx", "-g", "daemon off;"]
 CMD ["nginx", "-g", "daemon off;"]

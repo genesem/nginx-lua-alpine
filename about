@@ -3,7 +3,7 @@ echo ""
 echo "$(nginx -tv)"
 echo "* LuaJIT 2.1.0-beta3"
 echo "* Alpine Linux $(cat /etc/alpine-release)"
-echo "* Built by Gene Semerenko (https://github.com/genesem)"
+echo "* Built by Gene Semerenko (https://github.com/genesem/nginx-lua-alpine)"
 echo ""
 
 
