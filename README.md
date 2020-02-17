@@ -11,18 +11,23 @@ https://hub.docker.com/repository/docker/genesem/nginx-lua-alpine
 |:----------------------|:------:|
 | Alpine                | 3.11   |
 | Nginx                 | 1.16   | 
-| procps (ps command)   |        | 
-| luajit-dev            | 2.1.0  | 
+| procps bind-tools     |        | 
+| luajit                | 2      | 
+| lua5.1                | 5.1    |
+| lua5.1-libs           |        |
+| lua5.1-redis          |        |
 | nginx-mod-http-lua    | 1.16   |
 | lua-resty-core        | 0.1.17 | 
 | lua-resty-lrucache    | 0.09   | 
 | lua-resty-redis       | 0.27   | 
+| lua-resty-session     |        |
   
-DIGEST:  sha256:cf99cde489c6a368cda4a95dd1d7d6589825230a5f356bcfcb37110a27326355
 
-OS/ARCH: linux/amd64
+DIGEST:     sha256:7850ffc69edc7e3b6764e56581d1d0239813fe3416c93969b87bb4741cd9a5e1
 
-SIZE:    5.97 MB
+OS/ARCH:    linux/amd64
+
+SIZE:       9.91 MB
 
 Pull it: `docker pull genesem/nginx-lua-alpine:latest`
 
