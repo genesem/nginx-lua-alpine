@@ -7,7 +7,7 @@ It is a source for genesem/nginx-lua-alpine docker image located at:
 https://hub.docker.com/repository/docker/genesem/nginx-lua-alpine
 
 
-| Whats included:       | ver.   |
+| What's included:      | ver.   |
 |:----------------------|:------:|
 | Alpine                | 3.11   |
 | Nginx                 | 1.16   | 
